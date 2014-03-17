@@ -22,7 +22,9 @@ function cleanup(shrinkwrap) {
   }
   delete shrinkwrap.resolved;
   for (var key in shrinkwrap) {
-    shrinkwrap[key] = cleanup(shrinkwrap[key]);
+    if (shrinkwrap.hasOwnProperty(key)) {
+      shrinkwrap[key] = cleanup(shrinkwrap[key]);
+    }
   }
   return shrinkwrap;
 }
