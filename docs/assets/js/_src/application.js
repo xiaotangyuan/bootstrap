@@ -102,7 +102,7 @@
 
     // Config ZeroClipboard
     ZeroClipboard.config({
-      moviePath: '/assets/flash/zero-clipboard.swf',
+      moviePath: '/assets/flash/ZeroClipboard.swf',
       hoverClass: 'btn-clipboard-hover'
     })
 
